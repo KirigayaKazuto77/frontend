@@ -1,8 +1,4 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
   <router-view/>
 </template>
 
@@ -26,5 +22,12 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+body{
+  background-image: url("../src/assets/bg.png");
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
