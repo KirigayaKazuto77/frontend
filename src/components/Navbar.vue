@@ -1,7 +1,7 @@
 <template>
   <div class="topnav">
     <a class="active" href="#mainscreen">홈페이지</a>
-    <a href="#mainmenu">나의 페이지</a>
+    <a href="#mainmenu">회사 정보 등록</a>
     <a href="#mainscreen">기준정보</a>
     <a href="#mainscreen">원자재관리</a>
     <a href="#mainscreen">생산관리</a>

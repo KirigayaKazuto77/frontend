@@ -7,30 +7,33 @@
           <div class="subcon-1">
 
             <div class="table">
-              <p>• 화면 주요 항목 설명</p>
+              <p>기능별 호출 프로시져 ( Call  Procedure )  및 전달 항목 (Parameter )</p>
 
               <div class="table-holder">
                 <table id="cont-tables">
                   <tr>
-                    <th width="5%">No.</th>
-                    <th width="15%">항목명</th>
-                    <th width="10%">형태</th>
-                    <th width="50%">설명</th>
-                    <th width="20%">비고</th>
+                    <th width="16%">기능</th>
+                    <th width="28%">호출 프로시져</th>
+                    <th width="28%">INPUT</th>
+                    <th width="28%">OUTPUT</th>
                   </tr>
                   <tr>
-                    <td class="td-center">1</td>
-                    <td class="td-center">조회</td>
-                    <td class="td-center">버튼</td>
-                    <td class="td-left">• 화면에 입력한 조회 조건에 해당하는 정보를 검색</td>
-                    <td class="td-left">• 모든 화면 공통</td>
+                    <td>조회</td>
+                    <td>PW_BAS_COMP1010_10Q</td>
+                    <td>없음</td>
+                    <td>조회 결과</td>
                   </tr>
                   <tr>
-                    <td class="td-center">2</td>
-                    <td class="td-center">신규(추가)</td>
-                    <td class="td-center">버튼</td>
-                    <td class="td-left">• 신규 자료 입력 시 사용 <br>• 입력할 항목의 값이 초기화 됨</td>
-                    <td class="td-left">• 모든 화면 공통</td>
+                    <td>저장</td>
+                    <td>PW_BAS_COMP1010_20W</td>
+                    <td>회사코드</td>
+                    <td>저장 결과</td>
+                  </tr>
+                  <tr>
+                    <td>삭제</td>
+                    <td>PW_BAS_COMP1010_20W</td>
+                    <td>회사코드</td>
+                    <td>삭제 결과</td>
                   </tr>
                 </table>
               </div>
@@ -47,7 +50,7 @@
 
 <script>
 export default {
-  name: 'Comp_Reg_Comp'
+  name: 'Comp_Reg_CallProc'
 }
 </script>
 
@@ -89,6 +92,7 @@ export default {
 #cont-tables td, #cont-tables th {
   border: 1px solid #ddd;
   padding: 8px;
+  text-align: center;
 }
 
 #cont-tables tr:nth-child(even){background-color: #f2f2f2;}
@@ -101,14 +105,6 @@ export default {
   text-align: center;
   background-color: #4CAF50;
   color: white;
-}
-
-.td-left {
-  text-align: left;
-}
-
-.td-center{
-  text-align: center;
 }
 
 </style>

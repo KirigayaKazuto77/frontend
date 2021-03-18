@@ -2,22 +2,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="mothercontainer">
 
-        <div class="grid-container-header-1">
-            <div class="grid-item-label-1">PGM ID</div>
-            <div class="grid-item-1">BASCOMP1010F</div>
-            <div class="grid-item-label-1">PGM NAME</div>  
-            <div class="grid-item-1">회사 정보 등록</div>
-            <div class="grid-item-label-1">작 성 자</div>
-            <div class="grid-item-1">이 상 목</div>
-        </div>
-
-        <div class="grid-container-header-2">
-            <div class="grid-item-label-2">설 명</div>
-            <div class="grid-item-2">스마트 팩토리 MES 시스템을 사용하는 회사 정보 등록 관리</div>
-            <div class="grid-item-label-2">작성일자</div>  
-            <div class="grid-item-2">2021-02-17</div>
-        </div>
-
         <div class="content">
 
           <div class="subcon-1">
@@ -41,61 +25,48 @@
               <p>■  회사정보목록 ( 1 )</p>
 
               <div class="table-holder">
-                <table id="customers">
+                <table id="content-table">
                   <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
+                    <th width="10%">No.</th>
+                    <th width="15%">회사코드</th>
+                    <th width="30%">회사명</th>
+                    <th width="15%">대표자명</th>
+                    <th width="30%">나머지 항목~~</th>
                   </tr>
                   <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
+                    <td>1</td>
+                    <td>C001</td>
+                    <td>㈜스마트팩토리 공급회사</td>
+                    <td>홍길동</td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td>Berglunds snabbköp</td>
-                    <td>Christina Berglund</td>
-                    <td>Sweden</td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                  </tr>
-                  <tr>
-                    <td>Königlich Essen</td>
-                    <td>Philip Cramer</td>
-                    <td>Germany</td>
-                  </tr>
-                  <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                  </tr>
-                  <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
-                  </tr>
-                  <tr>
-                    <td>North/South</td>
-                    <td>Simon Crowther</td>
-                    <td>UK</td>
-                  </tr>
-                  <tr>
-                    <td>Paris spécialités</td>
-                    <td>Marie Bertrand</td>
-                    <td>France</td>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                 </table>
               </div>
@@ -104,22 +75,92 @@
             <div class="form">
               <p>■ 회사정보상세</p>
 
-              <div class="form-style-2">
-                <div class="form-style-2-heading">Provide your information</div>
-                  <form action="" method="post">
-                    <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
-                    <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
-                    <label><span>Telephone</span><input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="4" />-<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4"  />-<input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10"  /></label>
-                    <label for="field4"><span>Regarding</span><select name="field4" class="select-field">
-                    <option value="General Question">General</option>
-                    <option value="Advertise">Advertisement</option>
-                    <option value="Partnership">Partnership</option>
-                    </select></label>
-                    <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+              <div class="content-form">
 
-                    <label><span> </span><input type="submit" value="Submit" /></label>
-                  </form>
+                <div class="content-form-1">
+                  <div class="form-label">※ 회사코드</div>
+                  <div><button type="button" style="width: 80px">Auto</button></div>
+                  <div>
+                    <label for="drpdwn-1">※ 산업군</label>
+                    <select name="drpdwn-1" id="drpdwn-1" class="drpdwn">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
                 </div>
+
+                <div class="content-form-2">
+                  <div class="form-label">※ 회사명</div>
+                  <div><input style="width:400px;" type="text" id="회사명" name="회사명"></div>
+                </div>
+                
+                <div class="content-form-3">
+                  <div class="form-label">※ 회사코드</div>
+                  <div>
+                    <select name="drpdwn-2" id="drpdwn-2" class="drpdwn">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="사업자번호">사업자번호</label>
+                    <input style="width:150px;" type="text" id="사업자번호" name="사업자번호">
+                  </div>
+                </div>
+
+                <div class="content-form-4">
+                  <div class="form-label">업   종</div>
+                  <div><input style="width:400px;" type="text" id="회사명" name="회사명"></div>
+                </div>
+
+                <div class="content-form-5">
+                  <div class="form-label">업   태</div>
+                  <div><input style="width:400px;" type="text" id="회사명" name="회사명"></div>
+                </div>
+
+                <div class="content-form-6">
+                  <div class="form-label">대표자명</div>
+                  <div><input style="width:400px;" type="text" id="대표자명" name="대표자명"></div>
+                </div>
+
+                <div class="content-form-7">
+                  <div class="form-label">전화번호</div>
+                  <div><input style="width:150px;" type="text" id="전화번호" name="전화번호"></div>
+                  <div>
+                    <label for="사업자번호">팩스번호</label>
+                    <input style="width:150px;" type="text" id="팩스번호" name="팩스번호">
+                  </div>
+                </div>
+
+                <div class="content-form-8">
+                  <div class="form-label">우편번호</div>
+                  <div><input style="width:150px;" type="text" id="우편번호" name="우편번호"></div>
+                </div>
+
+                <div class="content-form-9">
+                  <div class="form-label">주소</div>
+                  <div><input style="width:400px;" type="text" id="주소" name="주소"></div>
+                </div>
+
+                <div class="content-form-10">
+                  <div class="form-label">상세주소</div>
+                  <div><input style="width:400px;" type="text" id="상세주소" name="상세주소"></div>
+                </div>
+
+                <div class="content-form-11">
+                  <div class="form-label">사용여부</div>
+                  <div>
+                    <form action="">
+                      <input type="radio" id="사용" name="사용여부" value="사용">
+                      <label for="사용">사용</label>
+                      <input type="radio" id="미사용 " name="사용여부" value="미사용 ">
+                      <label for="미사용 ">  미사용 </label>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
 
           </div>
@@ -141,52 +182,6 @@ export default {
 
 <style scoped>
 
-.grid-container-header-1 {
-    display: grid;
-    grid-template-columns: 10% 15% 10% 40% 10% 15%;
-    background-color: #2196F3;
-}
-.grid-item-1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 10pt;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.grid-item-label-1{
-  background-color: #2196F3;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 10pt;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.grid-container-header-2 {
-    display: grid;
-    grid-template-columns: 10% 65% 10% 15%;
-    background-color: #2196F3;
-}
-.grid-item-2 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 10pt;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.grid-item-label-2{
-  background-color: #2196F3;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 10pt;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 .content{
   height: 600px;
   display: grid;
@@ -202,9 +197,12 @@ export default {
 }
 
 .misc-btn-container{
+  margin-top: 5px;
+  margin-bottom: 5px;
   height: 30px;
   display: grid;
   grid-template-columns: 20% 13.5% 13.5% 12.5% 13.5% 13.5% 13.5%;
+  margin-right: 9px;
 }
 
 .misc-btn{
@@ -216,15 +214,17 @@ export default {
 }
 
 .cont-header{
-  margin-top: 0px;
+  margin-top: 5px;
+  margin-inline: auto;
   height: 40px;
-  background-color: #85bbe7;
+  width: 98%;
+  background-color: #abd3f3;
   font-size: 25pt;
   border: 2px solid rgba(0, 0, 0, 0.4);
 }
 
 .subcon-2{
-  margin-top: 0px;
+  margin-top: -5px;
   text-align: left;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -240,109 +240,120 @@ export default {
 
 
 
-#customers {
+#content-table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#customers td, #customers th {
+#content-table td, #content-table th {
   border: 1px solid #ddd;
   padding: 8px;
+  font-size: 10pt;
+  text-align: center;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#content-table tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+#content-table tr:hover {background-color: #ddd;}
 
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
+#content-table th {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
   background-color: #4CAF50;
   color: white;
+  font-size: 10pt;
 }
 
 
 
-.form-style-2{
-	max-width: 500px;
-	padding: 20px 12px 10px 20px;
-	font: 13px Arial, Helvetica, sans-serif;
+
+.content-form{
+  background-color: #abd3f3;
+  display: grid;
+  height: 440px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
 }
-.form-style-2-heading{
-	font-weight: bold;
-	font-style: italic;
-	border-bottom: 2px solid #ddd;
-	margin-bottom: 20px;
-	font-size: 15px;
-	padding-bottom: 3px;
+
+.form-label{
+   text-align: right;
+   margin-right: 3px;
 }
-.form-style-2 label{
-	display: block;
-	margin: 0px 0px 15px 0px;
+
+.content-form-1{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 20% 45% 35%;
 }
-.form-style-2 label > span{
-	width: 100px;
-	font-weight: bold;
-	float: left;
-	padding-top: 8px;
-	padding-right: 5px;
+
+.drpdwn{
+  width: 80px; text-align-last: center;
+  text-align: center;
+  -ms-text-align-last: center;
+  -moz-text-align-last: center;
 }
-.form-style-2 span.required{
-	color:red;
+
+.content-form-2{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
-.form-style-2 .tel-number-field{
-	width: 40px;
-	text-align: center;
+
+.content-form-3{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
 }
-.form-style-2 input.input-field, .form-style-2 .select-field{
-	width: 48%;	
+
+.content-form-4{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
-.form-style-2 input.input-field, 
-.form-style-2 .tel-number-field, 
-.form-style-2 .textarea-field, 
- .form-style-2 .select-field{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	border: 1px solid #C2C2C2;
-	box-shadow: 1px 1px 4px #EBEBEB;
-	-moz-box-shadow: 1px 1px 4px #EBEBEB;
-	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	padding: 7px;
-	outline: none;
+
+.content-form-5{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
-.form-style-2 .input-field:focus, 
-.form-style-2 .tel-number-field:focus, 
-.form-style-2 .textarea-field:focus,  
-.form-style-2 .select-field:focus{
-	border: 1px solid #0C0;
+
+.content-form-6{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
-.form-style-2 .textarea-field{
-	height:100px;
-	width: 55%;
+
+.content-form-7{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% 32.5% 40%;
 }
-.form-style-2 input[type=submit],
-.form-style-2 input[type=button]{
-	border: none;
-	padding: 8px 15px 8px 15px;
-	background: #FF8500;
-	color: #fff;
-	box-shadow: 1px 1px 4px #DADADA;
-	-moz-box-shadow: 1px 1px 4px #DADADA;
-	-webkit-box-shadow: 1px 1px 4px #DADADA;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
+
+.content-form-8{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% 32.5% 40%;
 }
-.form-style-2 input[type=submit]:hover,
-.form-style-2 input[type=button]:hover{
-	background: #EA7B00;
-	color: #fff;
+
+.content-form-9{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
+
+.content-form-10{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.content-form-11{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 20% 32.5% 40%;
+}
+
 
 </style>
